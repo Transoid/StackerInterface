@@ -5,6 +5,8 @@
 	<artifactId>stackerinterface</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>StackerInterface</name>
+	<description>Interface project for Stacker implementations</description>
+	<url>https://github.com/Transoid/StackerInterface</url>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -19,9 +21,28 @@
 		</plugins>
 	</build>
 	<distributionManagement>
-		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<url>http://localhost:8081/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
-</project> 
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Ruben de Laat</name>
+			<email>ruben@logic-labs.nl</email>
+			<organization>Logic Labs</organization>
+			<organizationUrl>http://www.logic-labs.nl</organizationUrl>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:git:https://github.com/Transoid/StackerInterface.git</connection>
+		<developerConnection>scm:git:https://github.com/Transoid/StackerInterface.git</developerConnection>
+		<url>https://github.com/Transoid/StackerInterface</url>
+	</scm>
+</project>
